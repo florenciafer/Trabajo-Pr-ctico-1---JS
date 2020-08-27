@@ -1,0 +1,27 @@
+.container {
+  background-color: $color-white;
+  margin-top: 50px;
+  width: 2000px;
+  border-radius: 10px;
+}
+.header__table {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  background-color: $color-blue;
+  justify-content: space-between;
+}
+.header__title {
+  color: $color-white;
+}
+
+.text {
+  color: $color-letras;
+  font-size: 20px;
+}
+
+.container-footer {
+  padding: 30px;
+  margin-bottom: 100px;
+  width: 100%;
+}

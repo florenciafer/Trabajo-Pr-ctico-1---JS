@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cd76ad0e9d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header__table">
+        <h1 class="header__title">Ventas</h1>
+        <button id="btn-agregar" class="btn-success">
+          <i class="fas fa-plus-circle"></i>Nueva Venta
+        </button>
+      </div>
+      <table id="table1" class="table table-hover"></table>
+    </div>
+    <div class="container">
+      <header class="header__table">
+        <h1 class="header__title">Ventas por sucursal</h1>
+      </header>
+      <table id="table2" class="table table-hover"></table>
+    </div>
+    <div class="container container-footer">
+      <p id="text1" class="text"></p>
+      <p id="text2" class="text"></p>
+    </div>
+    <div id="container-modal" class="container-modal fade">
+      <div id="modal-content" class="modal-content">
+        <div class="modal-title">
+          <h2 class="title">Agregar venta</h2>
+          <button id="btn-cerrar" class="close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body form-group">
+          <p class="modal-subtitle">Vendedora</p>
+          <div class="dropdown">
+            <select id="vendedora-option" class="dropdown-content form-control">
+              <option value="Grace">Grace</option>
+              <option value="Ada">Ada</option>
+              <option value="Hedy">Hedy</option>
+              <option value="Sheryl">Sheryl</option>
+            </select>
+          </div>
+          <label class="modal-subtitle" for="componentes">Componentes</label>
+          <select
+            class="form-control"
+            id="componentes-option"
+            name="componentes"
+            id="componentes"
+            multiple
+          >
+            <option value="Monitor GPRS 3000">Monitor GPRS 3000 </option>
+            <option value="Motherboard ASUS 1500">Motherboard ASUS 1500</option>
+            <option value="Monitor ASC 543">Monitor ASC 543 </option>
+            <option value="Motherboard MZI">Motherboard MZI</option>
+            <option value="HDD Toyiva">HDD Toyiva</option>
+            <option value="HDD Wezter Dishital">HDD Wezter Dishital</option>
+            <option value="RAM Quinston">RAM Quinston</option>
+            <option value="RAM Quinston Fury">RAM Quinston Fury</option>
+          </select>
+          <div class="dropdown">
+            <p class="modal-subtitle">Sucursal</p>
+            <select id="sucursal-option" class="dropdown-content form-control">
+              <option value="Centro">Centro</option>
+              <option value="Caballito">Caballito</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <button id="btn-cancel" class="btn btn-secondary">Cancel</button>
+          <button id="btn-add" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+    <div id="container-modal2" class="container-modal fade">
+      <div id="modal-content2" class="modal-content modal-content2">
+        <div class="modal-title">
+          <h2 class="title">Eliminar Venta</h2>
+          <button class="close" id="btn-cerrar2">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5 class="modal-text">¿Estás segura?</h5>
+          <p class="modal-subtitle">Esta acción no se puede revertir.</p>
+        </div>
+        <div class="botones-modal">
+          <button id="btn-cancel2" class="btn btn-light">Cancelar</button>
+          <button id="btn-eliminar" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

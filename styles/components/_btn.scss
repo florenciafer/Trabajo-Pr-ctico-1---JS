@@ -1,0 +1,39 @@
+// .btn {
+//   //background-color: $color-green;
+//   color: $color-white;
+//   padding: 1px;
+// }
+.btn-remove {
+  font-size: 24px;
+  color: $color-red;
+  border: none;
+}
+.fa-plus-circle {
+  margin-right: 3px;
+}
+.btn-cerrar-agregarVenta {
+  margin: 2em, 2em;
+  border: none;
+}
+.btn-success {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+.btn-secondary {
+  font-size: 24px;
+}
+.btn-primary {
+  font-size: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn-light {
+  margin-right: 10px;
+  font-size: 24px;
+  background-color: hsl(0, 0%, 93%);
+}
+.btn-danger {
+  font-size: 24px;
+}
